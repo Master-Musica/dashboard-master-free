@@ -74,7 +74,7 @@ function dashboard_master_save_settings() {
             }
         }
 
-        // SALVAR AS PALAVRAS DO ADBLOCKER (Acesso para Admins e Super Admins)
+        // SAVE WORDS TO ADBLOCKER (Acccess to Admins and Super Admins)
         if ( isset( $_POST['dashboard_master_adblock_words'] ) ) {
             $words_clean = sanitize_textarea_field( wp_unslash( $_POST['dashboard_master_adblock_words'] ) );
             update_option( 'dashboard_master_adblock_words', $words_clean );
